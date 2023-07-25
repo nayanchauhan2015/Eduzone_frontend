@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popupsign.css">
+    <script src="https://kit.fontawesome.com/2a09458275.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Edutech</title>
+
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 1,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 48
+        }
+    </style>
+</head>
+<body>
+   <!-- Navigation -->
+   <nav>
+    <img src="images/logo.png" alt="">
+    <div class="navigation">
+        <ul>
+            <i id="menu-close" class="fa-solid fa-circle-xmark" style="color: #4b0150;"></i>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="popupsigin.html">Signin</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="">
+    </div>
+</nav>
+    <div class="box">
+        <h1>WELCOME !</h1>
+        <P id="hiranmoy">Start your details and start your learning jurney with us</P>
+        <a class="button" href="#popup1">SIGNUP</a>
+        <a class="button" href="#popup2" style="margin-left: 50px;">LOGIN</a>
+    </div>
+    
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <img src="avatar.jpg" class="avatar" style="top: -50px" alt="">
+            <h2 style="margin-top: 30px;">Please Signup here</h2>
+            <a class="close" href="#">&times;</a>
+            <form action="" class="form-popup" id="form-popup1">
+                <div class="content">
+                    <div class="form-group">
+                        <span class="input-icon"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" class="form-control" id="firstname" placeholder="Input your First Name here">
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" class="form-control" id="lastname" placeholder="Input your Last Name here">
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" class="form-control" id="email" placeholder="Input your Email here">
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon"><i class="fa-solid fa-mobile"></i></span>
+                    <input type="number" class="form-control" id="mobile" placeholder="Input your Mobile No. here">
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="paassword" class="form-control" id="password" placeholder="Input your password here">
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="paassword" class="form-control" id="retypepassword" placeholder="Retype your password here">
+                    </div>
+                    <button class="btn" id="signupbutton" onclick="signUp()">SIGNUP</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="popup2" class="overlay">
+        <div class="popup" style="margin-top: 200px;">
+            <img src="avatar.jpg" class="avatar" alt="">
+            <h2 style="margin-top: 20px;">Please login here</h2>
+            <a class="close" href="#">&times;</a>
+
+            <form action="" class="form-popup" id="form-popup2">
+                <div class="content">
+                    <div class="form-group">
+                        <span class="input-icon"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" class="form-control" id="login-email" placeholder="Input your Email here">
+                    </div>
+                    <div class="form-group">
+                        <span class="input-icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="paassword" id="login-passsword" class="form-control" placeholder="Input your password here">
+                    </div>
+                    <div class="buttom">
+                        <div class="form-group checkbox">
+                            <input type="checkbox">
+                            <label for="">Remember me</label>
+                        </div>
+                        <a href="forgotpassword.html" class="forgot-pass"> Forgot Password</a>
+                    </div>
+                    <button class="btn" id="loginbutton" onclick="login()">LOGIN</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>

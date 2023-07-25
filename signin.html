@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduTech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <img src="images/logo.png" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fa-solid fa-circle-xmark" style="color: #4b0150;"></i>
+                <li><a  href="index.html">Home</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a  href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a class="active"href="signin.html" class="signbtn">Sign In</a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png" alt="">
+        </div>
+    </nav>
+    <!-- Home -->
+    <section id="signup-home">
+        <section class="signup-sec">
+
+<div class="container2" id="container2">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1 class="h1-signup">Create Account</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your email for registration</span>
+			<input type="text" placeholder="Name" />
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<button>Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign in</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your account</span>
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<a href="#">Forgot your password?</a>
+			<button>Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+
+            </section>
+            <div class="container-signin"></div>
+
+            
+            <footer>
+                <div class="footer-col">
+                    <h3>Top  Products</h3>
+                    <li>Manage Reputation</li>
+                    <li>Power Tool</li>
+                    <li>Managed Website</li>
+                    <li>Marketing Services</li>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <li>Jobs</li>
+                    <li>Brand Assets</li>
+                    <li>Investor Relations</li>
+                    <li>Terms of Services</li>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Features</h3>
+                    <li>Manage Reputation</li>
+                    <li>Power Tool</li>
+                    <li>Managed Website</li>
+                    <li>Marketing Services</li>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <li>Guides</li>
+                    <li>Research</li>
+                    <li>Experts</li>
+                    <li>Marketing Services</li>
+                </div>
+
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>You can trust us. We only send promo offer, </p>
+                <div class="subscribe">
+                    <input type="text" placeholder="Your Email address">
+                    <a href="#" class="yellow">SUBSCRIBE</a>
+
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                <p>Copyright 2023 All rights reserved | This templates is made by Team EduTech</p>
+                <div class="pro-links">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+            </footer>
+            <script>
+                $('#menu-btn').click(function(){
+                    $('nav .navigation ul').addClass('active')
+                });
+                $('#menu-close').click(function(){
+                    $('nav .navigation ul').removeClass('active')
+                });
+           
+            const signUpButton = document.getElementById('signUp');
+                const signInButton = document.getElementById('signIn');
+                const container2 = document.getElementById('container2');
+                
+                signUpButton.addEventListener('click', () => {
+                    container2.classList.add("right-panel-active");
+                });
+                
+                signInButton.addEventListener('click', () => {
+                    container2.classList.remove("right-panel-active");
+                });</script>
+</body>
+</html>

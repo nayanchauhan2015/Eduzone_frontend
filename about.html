@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduTech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <img src="images/logo.png" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fa-solid fa-circle-xmark" style="color: #4b0150;"></i>
+                <li><a  href="index.html">Home</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a class="active" href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="signin.html" class="signbtn">Sign Up</a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png" alt="">
+        </div>
+    </nav>
+    <!-- Home -->
+    <section id="about-home">
+        <h2>About EduTech</h2>
+        
+            </section>
+            <section id="about-container">
+                <div class="about-image">
+                    <img src="images/a.png" alt="">
+                </div>
+                <div class="about-text">
+                    <h2>Welcome to EduTech, Enhance your skills with best Online Courses</h2>
+                    <p>You can start and finish one of these popular courses in under a day - for free! Check out the list below. Take the course for free</p>
+                    <div class="about-fe">
+                        <img src="images/fe1.png" alt="">
+                        <div class="fe-text">
+                            <h5>100+ Free Courses</h5>
+                            <p>You can start and fiinished one of these popular courses in under our site</p>
+                        </div>
+                    </div>
+                    <div class="about-fe">
+                        <img src="images/fe2.png" alt="">
+                        <div class="fe-text">
+                            <h5>Lifetime Access</h5>
+                            <p>You can start and fiinished one of these popular courses in under our site</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features -->
+            <section id="features">
+                <h1>Awesome Features</h1>
+                <p>Here is the Awesome features about this website</p>
+                <!-- 1 box -->
+                <div class="fea-base">
+                    <div class="fea-box"><i class="fa-solid fa-graduation-cap" style="color: #4b0150;"></i>
+                    <h3>Scolership Facility</h3>
+                    <p>One make creepeth, man bearing theira firmament won't great heaven</p>
+                </div>
+                <!-- 2 box -->
+                <div class="fea-box"><i class="fa-solid fa-book" style="color: #4b0150;"></i>
+                    <h3>Online Course</h3>
+                    <p>One make creepeth, man bearing theira firmament won't great heaven</p>
+                </div>
+                <!-- 3 box -->
+                <div class="fea-box"><i class="fa-solid fa-certificate" style="color: #4b0150;"></i>
+                    <h3>Certificate of Courses</h3>
+                    <p>One make creepeth, man bearing theira firmament won't great heaven</p>
+                </div>
+
+                </div>
+            </section>
+            <section id="trust">
+                <h1>Trusted by</h1>
+                <p>Our Website is Trusted by</p>
+                <div class="trust-img">
+                    <img src="images/trust (1).png" alt="">
+                    <img src="images/trust (2).png" alt="">
+                    <img src="images/trust (3).png" alt="">
+                    <img src="images/trust (4).png" alt="">
+                    <img src="images/trust (5).png" alt="">
+                    <img src="images/trust (6).png" alt="">
+                </div>
+            </section>
+
+            <footer>
+                <div class="footer-col">
+                    <h3>Top  Products</h3>
+                    <li>Manage Reputation</li>
+                    <li>Power Tool</li>
+                    <li>Managed Website</li>
+                    <li>Marketing Services</li>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <li>Jobs</li>
+                    <li>Brand Assets</li>
+                    <li>Investor Relations</li>
+                    <li>Terms of Services</li>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Features</h3>
+                    <li>Manage Reputation</li>
+                    <li>Power Tool</li>
+                    <li>Managed Website</li>
+                    <li>Marketing Services</li>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <li>Guides</li>
+                    <li>Research</li>
+                    <li>Experts</li>
+                    <li>Marketing Services</li>
+                </div>
+
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>You can trust us. We only send promo offer, </p>
+                <div class="subscribe">
+                    <input type="text" placeholder="Your Email address">
+                    <a href="#" class="yellow">SUBSCRIBE</a>
+
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                <p>Copyright 2023 All rights reserved | This templates is made by Team EduTech</p>
+                <div class="pro-links">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+            </footer>
+            <script>
+                $('#menu-btn').click(function(){
+                    $('nav .navigation ul').addClass('active')
+                });
+                $('#menu-close').click(function(){
+                    $('nav .navigation ul').removeClass('active')
+                });
+            </script>
+</body>
+</html>
